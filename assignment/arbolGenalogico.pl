@@ -1,3 +1,11 @@
+
+% -----------------------------------------------------------------------------
+% Nombre: Rodriguez Gallardo Alan Paul
+% Materia: Programación Lógica y Funcional
+% Trabajo: Número 1
+% Descripcion: Árbol Genealógico de mi familia en prolog
+% -----------------------------------------------------------------------------
+
 %%
 %% Declaraciones
 %%
@@ -63,18 +71,18 @@ madre(Padre,Hijo):-
     mujer(Padre),
     padre(Padre,Hijo).
     
-% Una persona es tu tio cuando el es hermano de tu padre
+% Una persona es tu tio/a cuando él/ella es hermano de tu padre
 tio(Tio,Sobrino):-
     hermanos(Tio,Padre),
     padre(Padre,Sobrino).
     
-% Una persona es tu primo cuando sus padres son hermanos
+% Una persona es tu primo/a cuando uno de sus padres y un padre tuyo sean hermanos
 primo(Primo1,Primo2):-
     padre(Padre1,Primo1),
     padre(Padre2,Primo2),
     hermanos(Padre1,Padre2).
     
-% Una persona es tu abuelo cuando es el padre de tu padre
+% Una persona es tu abuelo/a cuando es él/ella es padre/madre de alguno de tus padres
 abuelo(Abuelo,Nieto):-
     padre(Abuelo,Padre),
     padre(Padre,Nieto).
