@@ -1,7 +1,8 @@
 Ejercicio 1</br>
 
 
-  [Asciinema](https://asciinema.org/a/8juoUgC6jJHvh1T1EKsc65Vz5)
+  [Ejecución](https://asciinema.org/a/8juoUgC6jJHvh1T1EKsc65Vz5)</br>
+  [Depuración](https://asciinema.org/a/FHkp1TYPuWZJ6KUwMR4Tm8n5l)</br>
 
 ```mermaid
 graph TD;
